@@ -416,10 +416,14 @@ font-family: poppins;
     align-items: flex-start;
 }
 
+.secim{
+    height: 800px;
+}
+
 .curiosities-content {
     flex: 1 1 50%;
     font-family: nunito regular;
-    margin-right: 90px;
+    margin-right: 10rem;
 }
 
 .curiosities-content {
@@ -468,6 +472,8 @@ font-family: poppins;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .subscribe form {
