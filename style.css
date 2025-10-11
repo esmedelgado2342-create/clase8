@@ -33,7 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 20px;
     background-color: #fff;
     border-bottom: 1px solid #eee;
 }
@@ -45,7 +45,8 @@ header {
 }
 
 .logo img {
-    height: 50px;
+    height: 80px;
+    width: 80px;
 }
 
 nav ul {
@@ -90,17 +91,28 @@ nav a {
 
 .hero p {
     font-size: 1.2em;
+    font-family: poppins semibold;
 }
 
 .hero button {
-    background-color: #2E4F2E;
-    color: white;
+    background-color: #BBB399;
+    color: #172713;
     border: none;
-    padding: 15px 30px;
+    padding: 10px 30px;
     font-size: 1em;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-family: poppins semibold;
 }
+
+.curo{
+background-color: #BBB399;
+border-radius: 8px;
+padding: 5px 10px;
+border: none;
+font-family: poppins;
+}
+
 
 .categories {
     text-align: center;
@@ -115,12 +127,15 @@ nav a {
 }
 
 .card {
-    background-color: #fafafa;
+    background-color: #FBF8F0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     border: 1px solid #eee;
     width: 250px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card img {
@@ -131,7 +146,11 @@ nav a {
 
 .card-content {
     padding: 20px;
-    font-family: nunito regular;
+    font-family: poppins;
+    background-color: #FBF8F0;
+    flex: 1;
+    border-radius: 0 0 10px 10px;
+
 }
 .text{
     font-family: nunito regular;
@@ -142,7 +161,12 @@ nav a {
 .card-content h3 {
     margin-top: 0;
     font-size: 1.2em;
-    color: #2E4F2E;
+    color: #172713;
+}
+
+.texto{
+    font-family: nunito regular;
+    color: #172713;
 }
 
 .card-content p {
@@ -153,6 +177,10 @@ nav a {
 .page-title {
     text-align: center;
     padding: 50px 20px;
+}
+
+.textl{
+    font-family: nunito;
 }
 
 .page-title h1 {
@@ -174,7 +202,8 @@ nav a {
     padding: 15px;
     width: 300px;
     border: 1px solid #ccc;
-    border-radius: 25px;
+    border-radius: 18px;
+    background-color: #FBF8F0;
 }
 
 .featured-categories, .all-plants {
@@ -184,7 +213,7 @@ nav a {
 
 .featured-categories h2, .all-plants h2 {
     font-size: 2em;
-    color: #2E4F2E;
+    color: #172713;
     margin-bottom: 30px;
 }
 
@@ -212,13 +241,13 @@ nav a {
 
 .plant-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 0 40px;
 }
 
 .plant-card {
-    background-color: #fff;
+    background-color: #FBF8F0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
@@ -257,7 +286,6 @@ nav a {
 .care-section {
     display: flex;
     align-items: center;
-    padding: 50px 40px;
     gap: 50px;
 }
 
@@ -267,6 +295,8 @@ nav a {
 
 .care-content {
     flex: 1;
+    margin-left: 80px;
+    margin-right: 60px;
 }
 
 .care-content h2 {
@@ -281,7 +311,7 @@ nav a {
     flex: 1;
 }
 
-.care-image img {
+.care-image {
     max-width: 100%;
     border-radius: 10px;
 }
@@ -298,7 +328,7 @@ nav a {
 
 .contact-form-section h1 {
     font-size: 2.5em;
-    color: #2E4F2E;
+    color: #172713;
 }
 
 .contact-form-section form {
@@ -327,19 +357,23 @@ nav a {
 .form-group input, .form-group textarea {
     padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #F0F0F0;
+    font-family: nunito;
+    color: #6C7153;
 }
 
 .contact-form-section button {
-    background-color: #2E4F2E;
+    background-color: #172713;
     color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 10px 30px;
     font-size: 1em;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     align-self: flex-start;
+    font-family: poppins;
+    width: 350px;
 }
 
 .contact-info-section {
@@ -373,14 +407,19 @@ nav a {
 .curiosities {
     display: flex;
     align-items: center;
-    padding: 50px 40px;
-    gap: 50px;
+    gap: 70px;
+    background-color: #FBF8F0;
+
 }
 
-.curiosities img {
-    flex: 1;
-    max-width: 50%;
-    border-radius: 10px;
+.curiosities-image {
+    align-items: flex-start;
+}
+
+.curiosities-content {
+    flex: 1 1 50%;
+    font-family: nunito regular;
+    margin-right: 90px;
 }
 
 .curiosities-content {
@@ -389,7 +428,66 @@ nav a {
 }
 
 .title{
-    font-family: poppins semibold;
+    font-family: poppins;
+}
+
+.email{
+    border-radius: 9px;
+    padding: 13px;
+    font-family: nunito regular;
+    color: #6C7153 ;
+    border: 1px solid #6C7153 ;
+    width: 350px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.unete{
+    border-radius: 9px;
+    padding: 10px;
+    width: 150px;
+    font-family: poppins;
+    font-size: 17px;
+    border: none;
+    color:#ffff;
+    background-color: #6C7153;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    cursor: pointer;
+
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.subscribe form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.subscribe input.email {
+    text-align: left;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.subscribe button.unete {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
 }
 
 footer {
@@ -427,7 +525,7 @@ footer {
 
     .category-cards {
         flex-direction: column;
-        align-items: center;
+        align-items:center;
     }
 
     .care-section, .care-section.reverse {
