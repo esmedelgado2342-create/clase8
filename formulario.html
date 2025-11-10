@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario - Botanē</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./image/logo pagina-001.png" alt="Botanē Logo">
+      <h1 class="titlepag">BOTANĒ</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="categories.html">CATEGORÍAS</a></li>
+        <li><a href="library.html">BIBLIOTECA</a></li>
+        <li><a href="care.html">CUIDADOS</a></li>
+        <li><a href="contact.html" class="active">CONTACTO</a></li>
+        <li><a href="formulario.html">PLANTA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+<div class="container main-container2">
+      <h1>Formulario: Cuida tu planta con Botanē</h1>
+      <p class="subtitle">Registra o consulta los cuidados ideales para tu planta.</p>
+
+  <div class="form-column2">
+      <form>
+      <div class="form-grid2">
+        <div class="form-group2">
+        <label for="plant-name">Nombre de la planta:</label>
+        <input type="text" id="plant-name" placeholder="Ejemplo: Alocasia">
+   </div>
+      <div class="form-group2">
+        <label for="plant-type">Tipo de planta:</label>
+        <input type="text" id="plant-type" placeholder="Interior / Exterior ">
+  </div>
+      <div class="form-group2">
+        <label for="watering-frequency">Frecuencia de riego:</label>
+        <input type="text" id="watering-frequency">
+  </div>
+      <div class="form-group2">
+        <label for="recommended-temperature">Temperatura:</label>
+        <input type="text" id="recommended-temperature" placeholder="°C">
+  </div>
+</div>
+
+<div class="form-group2">
+      <label>Luz ideal:</label>
+      <div class="radio-group2">
+  <div class="radio-option2">
+        <input type="radio" id="luz-mucha" name="luz" value="mucha" checked>
+        <label for="luz-mucha">Mucha</label>
+</div>
+<div class="radio-option2">
+        <input type="radio" id="luz-media" name="luz" value="media">
+        <label for="luz-media">Media</label>
+</div>
+      <div class="radio-option2">
+        <input type="radio" id="luz-poca" name="luz" value="poca">
+        <label for="luz-poca">Poca</label>
+      </div>
+    </div>
+</div>
+<div class="form-group2">
+      <label for="additional-notes">Notas adicionales:</label>
+      <textarea id="additional-notes" rows="4" placeholder="Anota algo especial sobre esta planta..."></textarea>
+</div>
+
+<button class="button2" type="submit">Enviar</button>
+</form>
+  </div>
+    <div class="image-column">
+      <img src="./image/planta cuidado s2.jpg" alt="Cuidado de plantas">
+    </div>
+  </div>
+    </main>
+
+</body>
+</html>
