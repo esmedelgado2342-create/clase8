@@ -5,7 +5,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyBc-x6EYv3LxISVVdZGW9m06CGxfz3VrPg",
   authDomain: "botane-e8214.firebaseapp.com",
   projectId: "botane-e8214",
-  storageBucket: "botane-e8214.appspot.com", // asegúrate que este sea correcto
+  storageBucket: "botane-e8214.appspot.com",
   messagingSenderId: "1073605193555",
   appId: "1:1073605193555:web:12ec22dbd8b3514df47ba6",
   measurementId: "G-PCE0XCW5X5"
